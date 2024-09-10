@@ -289,7 +289,7 @@ class CNN(nn.Module):
 
 #### 5.3 nn.conv3d
 
-三维卷积层, 输入的尺度是(N, C_in,D,H,W)，输出尺度（N,C_out,D_out,H_out,W_out）. 注意，输入的是五维的数据，也就是在二维长宽的基础上又加了“高度”。其他做法和conv2d类似。
+三维卷积层, 输入的尺度是(N, C_in,D,H,W)，输出尺度（N,C_out,D_out,H_out,W_out）. 注意，输入的是五维的数据，也就是在二维长宽的基础上又加了“高度”。其他做法和conv2d类似。 N是batch size， C是通道数，例如rgb
 
 
 
