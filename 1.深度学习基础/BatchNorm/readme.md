@@ -47,19 +47,20 @@ running_var = momentum * running_var + (1 - momentum) * x_var
 momentum：动量
 带有动量的权重更新公式为：
 
-\[
+$$
 v_{t+1} = \beta v_t + (1 - \beta) \nabla L(w_t)
-\]
+$$
 
-\[
+$$
 w_{t+1} = w_t - \eta v_{t+1}
-\]
+$$
 
 其中：
 
 - \( v_t \) 是累积的梯度，即“速度”，
 - \( \beta \) 是动量系数，通常取 \( 0.9 \) 左右，表示保留上次更新方向的比例，
 - \( \nabla L(w_t) \) 是当前的梯度。
+
 
 
 
