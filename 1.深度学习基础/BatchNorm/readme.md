@@ -1,6 +1,6 @@
 ## A) 简单了解BN层 (In 30 seconds)
 
-Batch-Normalization (BN)是一种让神经网络训练**更快**、**更稳定**的方法(faster and more stable)。它计算每个mini-batch的均值和方差，并将其拉回到均值为0方差为1的标准正态分布。BN层通常在nonlinear function的前面/后面使用。
+Batch-Normalization (BN)是一种让神经网络训练**更快**、**更稳定**的方法(faster and more stable)。它计算每个mini-batch的均值mean和方差variance，并将其拉回到均值为0方差为1的标准正态分布normal distribution。BN层通常在nonlinear function的前面/后面使用。
 
 ![img](https://pic4.zhimg.com/v2-9e2198bf0ea2a549452cf62a61d17e5f_b.png)
 
