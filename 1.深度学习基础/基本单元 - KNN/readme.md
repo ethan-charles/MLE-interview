@@ -88,7 +88,7 @@ y_pred = knn.predict(X_test)
 # 计算准确率
 accuracy = accuracy_score(y_test, y_pred)
 print(f"模型的准确率为: {accuracy}")
-
+```
 
 ## 0x07. KNN优化
 KD-树和球树：为了加速距离计算，可以使用 KD-树（k-d tree）或球树（Ball Tree）等数据结构来存储训练样本，加快 KNN 的查询效率。
