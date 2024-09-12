@@ -24,6 +24,11 @@
 - 函数输出**不是以 0 为中心的**，这会降低权重更新的效率；
 - Sigmoid 函数执行指数运算，运行得较慢。
 
+\[
+\sigma(x) = \frac{1}{1 + e^{-x}}
+\]
+
+
 #### 2. Tanh函数
 
 !![img](https://pic3.zhimg.com/80/v2-d04be8777f2eeba6321d90d9d3106d8e_1440w.jpg)
