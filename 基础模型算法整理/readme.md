@@ -74,30 +74,50 @@ sigmoid(z) = 1 / (1 + exp(-z))
 # Naive Bayes
 
 1. For each class y in the training data:
+
    1.1 Compute the prior P(y) = count(y) / total_count
+
    1.2 For each feature x_i:
+   
        - Compute the likelihood P(x_i | y)
+
 2. For each test data point x:
+
    2.1 Compute the posterior for each class y:
+
        P(y | x) = P(y) * Π P(x_i | y)
+
    2.2 Assign the class with the highest posterior probability.
 
 # Random Forest
 
 1. For each tree in the forest:
+
    1.1 Select a random subset of the training data (with replacement)
+
    1.2 Build a decision tree using the subset
+
    1.3 At each node, randomly select a subset of features to split on
+
 2. For each test data point:
+
    2.1 Get predictions from all trees
-   2.2 Assign the majority vote as the final prediction
+
+   2.2 Assign the majority vote as the final prediction.
 
 # Gradient Boosting
 
 1. Initialize the model with a constant prediction (e.g., mean of the target values)
+
 2. For each iteration:
+
    2.1 Compute the residuals (errors) between the current predictions and actual target values
+
    2.2 Train a weak learner (e.g., a decision tree) to predict the residuals
+
    2.3 Update the model by adding the weak learner's prediction to the current model
+
    2.4 Multiply the weak learner's predictions by a learning rate to control the step size
+
 3. Repeat until the model reaches a stopping criterion (e.g., number of iterations or convergence).
+
