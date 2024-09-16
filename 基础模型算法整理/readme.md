@@ -13,58 +13,63 @@
 
 # Logistic Regression
 
-1. Initialize weights w and bias b
-2. Set learning rate α
-3. For each epoch:
-   3.1 For each data point (x_i, y_i):
-       - Compute y_pred = sigmoid(w * x_i + b)
-       - Calculate error = y_pred - y_i
-       - Update weights: w = w - α * error * x_i
-       - Update bias: b = b - α * error
+1. Initialize weights w and bias b  
+2. Set learning rate α  
+3. For each epoch:  
+   - For each data point (x_i, y_i):  
+       - Compute y_pred = sigmoid(w * x_i + b)  
+       - Calculate error = y_pred - y_i  
+       - Update weights: w = w - α * error * x_i  
+       - Update bias: b = b - α * error  
 4. Repeat until convergence or for a set number of iterations.
 
 # Sigmoid function:
 sigmoid(z) = 1 / (1 + exp(-z))
 
+
 # K-Nearest Neighbors (KNN)
 
-1. Set the number of neighbors K
-2. For each test data point:
-   2.1 Calculate the distance between the test point and all training points
-   2.2 Select the K nearest neighbors
-   2.3 Assign the most common label among the K neighbors as the prediction
+1. Set the number of neighbors K  
+2. For each test data point:  
+   - Calculate the distance between the test point and all training points  
+   - Select the K nearest neighbors  
+   - Assign the most common label among the K neighbors as the prediction
+
 
 # Decision Tree
 
-1. Start at the root node
-2. For each node, if all data points belong to the same class:
-   - Return the class
-3. Otherwise:
-   3.1 Calculate the best feature to split on based on a criterion (e.g., Gini impurity, Information gain)
-   3.2 Split the data into subsets based on the selected feature
-   3.3 Repeat the process recursively for each subset until reaching a stopping condition (e.g., max depth, pure leaf)
+1. Start at the root node  
+2. For each node, if all data points belong to the same class:  
+   - Return the class  
+3. Otherwise:  
+   - Calculate the best feature to split on based on a criterion (e.g., Gini impurity, Information gain)  
+   - Split the data into subsets based on the selected feature  
+   - Repeat the process recursively for each subset until reaching a stopping condition (e.g., max depth, pure leaf)  
 4. Assign the majority class in the leaf nodes.
+
 
 # Support Vector Machine (SVM)
 
-1. Initialize weights w and bias b
-2. Set learning rate α and regularization parameter λ
-3. For each epoch:
-   3.1 For each data point (x_i, y_i):
-       - If y_i * (w * x_i + b) >= 1:
-           Update weights: w = w - α * λ * w
-       - Else:
-           Update weights: w = w - α * (λ * w - y_i * x_i)
-           Update bias: b = b + α * y_i
+1. Initialize weights w and bias b  
+2. Set learning rate α and regularization parameter λ  
+3. For each epoch:  
+   - For each data point (x_i, y_i):  
+       - If y_i * (w * x_i + b) >= 1:  
+           - Update weights: w = w - α * λ * w  
+       - Else:  
+           - Update weights: w = w - α * (λ * w - y_i * x_i)  
+           - Update bias: b = b + α * y_i  
 4. Repeat until convergence or for a set number of iterations.
+
 
 # K-Means Clustering
 
-1. Initialize K cluster centroids randomly
-2. For each data point:
-   2.1 Assign the point to the nearest centroid
-3. Update centroids by calculating the mean of the points in each cluster
-4. Repeat steps 2-3 until convergence (centroids no longer change or maximum iterations reached)
+1. Initialize K cluster centroids randomly  
+2. For each data point:  
+   - Assign the point to the nearest centroid  
+3. Update centroids by calculating the mean of the points in each cluster  
+4. Repeat steps 2-3 until convergence (cent
+
 
 # Naive Bayes
 
