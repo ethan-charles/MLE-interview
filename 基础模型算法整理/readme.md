@@ -1,14 +1,15 @@
 # Linear Regression
 
-1. Initialize weights w and bias b
-2. Set learning rate α
-3. For each epoch:
-   3.1 For each data point (x_i, y_i):
-       - Predict y_pred = w * x_i + b
-       - Calculate error = y_pred - y_i
-       - Update weights: w = w - α * error * x_i
-       - Update bias: b = b - α * error
+1. Initialize weights w and bias b  
+2. Set learning rate α  
+3. For each epoch:  
+   - For each data point (x_i, y_i):  
+       - Predict y_pred = w * x_i + b  
+       - Calculate error = y_pred - y_i  
+       - Update weights: w = w - α * error * x_i  
+       - Update bias: b = b - α * error  
 4. Repeat until convergence or for a set number of iterations.
+
 
 # Logistic Regression
 
